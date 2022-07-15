@@ -1,0 +1,66 @@
+.overlay {
+    position: absolute;
+    /* max-width: 1240px;
+  max-height: 940px; */
+    height: 90vh;
+    width: 85vw;
+    padding: 10px;
+    display: flex;
+    /* background: rgba(31, 29, 43, 0.775);  dark mode*/
+    border-radius: 20px;
+    flex-direction: column;
+}
+
+.lightMode {
+    background: rgba(255, 255, 255, 0.375); /* light mode*/
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    color: black;
+}
+
+.darkMode {
+    background: rgba(31, 29, 43, 0.775);
+    border: 0.01px solid rgba(31, 29, 43, 0.997);
+    color: white;
+}
+
+.topBox {
+    display: flex;
+    flex-direction: row;
+    height: 5%;
+    padding: 5px;
+}
+
+.topBoxLogoLeft {
+    display: flex;
+    width: 20%;
+    align-items: center;
+}
+
+.topBoxIconsRight {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 80%;
+}
+.topBoxIconsRightGrid {
+    display: grid;
+    grid-template-columns: 20px 20px 20px;
+    column-gap: 20px;
+}
+
+.bottomBox {
+    display: flex;
+    flex-direction: row;
+    height: 95%;
+}
+
+.bottomBoxLeftMenu {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.bottomBoxRightContent {
+    display: flex;
+    width: 80%;
+}

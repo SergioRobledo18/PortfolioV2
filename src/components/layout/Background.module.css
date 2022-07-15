@@ -1,0 +1,29 @@
+.background {
+    --size: 450px;
+    position: fixed;
+    width: var(--size);
+    height: var(--size);
+    filter: blur(var(--size));
+    /*background-image: linear-gradient(hsl(158, 82, 57, 85%), hsl(252, 82, 57));*/
+    border-radius: 1000px;
+}
+
+.lightMode {
+    background-image: linear-gradient(
+        rgba(223, 75, 240, 0.85),
+        rgb(255, 255, 255)
+    );
+}
+
+.darkMode {
+    background-image: linear-gradient(
+        rgba(195, 249, 229, 0.85),
+        rgba(91, 55, 235, 1)
+    );
+}
+
+@media (min-width: 720px) {
+    .background {
+        --size: 800px; /* change the size of the orb*/
+    }
+}

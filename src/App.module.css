@@ -1,0 +1,20 @@
+.mainContainer {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.darkMode {
+    background-color: #222;
+}
+
+.lightMode {
+    background-color: rgb(122, 86, 144);
+}
+
+* {
+    transition: all 0.25s ease-out;
+}
