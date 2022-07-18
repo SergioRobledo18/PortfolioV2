@@ -1,10 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;700;900&display=swap");
+
+* {
+    font-family: "Roboto Slab", serif;
+}
+
+:root {
+    --lightModeColor: black;
+    --darkModeColor: white;
+}
+
 .overlay {
     position: absolute;
     /* max-width: 1240px;
   max-height: 940px; */
     height: 90vh;
     width: 85vw;
-    padding: 10px;
+    padding: 25px;
     display: flex;
     /* background: rgba(31, 29, 43, 0.775);  dark mode*/
     border-radius: 20px;
@@ -14,20 +25,22 @@
 .lightMode {
     background: rgba(255, 255, 255, 0.375); /* light mode*/
     border: 1px solid rgba(255, 255, 255, 0.125);
-    color: black;
+    color: var(--lightModeColor);
+    --secondaryColor: rgb(47, 47, 47);
 }
 
 .darkMode {
-    background: rgba(31, 29, 43, 0.775);
-    border: 0.01px solid rgba(31, 29, 43, 0.997);
-    color: white;
+    background: #3c405cd2;
+    border: 0.01px solid #3c405c;
+    color: var(--darkModeColor);
+    --secondaryColor: rgb(176, 176, 176);
 }
 
 .topBox {
     display: flex;
     flex-direction: row;
     height: 5%;
-    padding: 5px;
+    padding: 10px;
 }
 
 .topBoxLogoLeft {
@@ -44,8 +57,8 @@
 }
 .topBoxIconsRightGrid {
     display: grid;
-    grid-template-columns: 20px 20px 20px;
-    column-gap: 20px;
+    grid-template-columns: 30px 30px 30px;
+    column-gap: 10px;
 }
 
 .bottomBox {
@@ -57,10 +70,25 @@
 .bottomBoxLeftMenu {
     display: flex;
     flex-direction: column;
-    width: 20%;
+    justify-content: flex-start;
+    width: 15%;
+    padding: 15px 10px;
+    overflow-y: scroll;
+}
+
+.menuTitle {
+    font-size: 15px;
+    color: var(--secondaryColor);
+    letter-spacing: 0.02em;
 }
 
 .bottomBoxRightContent {
     display: flex;
-    width: 80%;
+    width: 85%;
+}
+
+.overlay,
+.lightMode,
+.darkMode {
+    transition: all 0.25s ease-out;
 }

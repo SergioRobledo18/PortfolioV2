@@ -5,7 +5,7 @@ import Background from "./components/layout/Background";
 import Dashboard from "./components/layout/Dashboard";
 
 function App() {
-    const [light, setLight] = useState(true);
+    const [light, setLight] = useState(false);
 
     const lightModeChangeHandler = () => {
         if (light) {

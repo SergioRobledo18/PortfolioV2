@@ -1,0 +1,39 @@
+.formButton {
+    border: none;
+    background-color: transparent;
+}
+
+.SunIcon {
+    width: 30px;
+    height: 30px;
+    fill: var(--darkModeColor);
+}
+
+.SunIcon:hover {
+    fill: #fce570;
+    stroke-width: 1;
+    stroke: #fce570;
+    animation: SunRotation 5s linear infinite;
+}
+
+@keyframes SunRotation {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.MoonIcon {
+    width: 30px;
+    height: 30px;
+    fill: #f6f1d5;
+}
+
+/* .MoonIcon:hover .NightSky {
+    fill: #344e5d !important;
+} */
+
+/* .MoonIcon:hover .MoonShadow {
+    fill: #717171;
+} */
+
+/* #717171 */

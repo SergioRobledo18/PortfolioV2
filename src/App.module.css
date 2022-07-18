@@ -8,13 +8,9 @@
 }
 
 .darkMode {
-    background-color: #222;
+    background-color: #1f2336;
 }
 
 .lightMode {
     background-color: rgb(122, 86, 144);
-}
-
-* {
-    transition: all 0.25s ease-out;
 }

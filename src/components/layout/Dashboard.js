@@ -1,5 +1,8 @@
 import React from "react";
 import classes from "./Dashboard.module.css";
+import DarkLightMode from "../UI/DarkLightMode";
+import MenuItem from "./MenuItem";
+import { menuItems } from "../../menu";
 import classnames from "classnames";
 const Dashboard = (props) => {
     return (
@@ -15,12 +18,33 @@ const Dashboard = (props) => {
                     <div className={classes.topBoxLogoLeft}>Sergio Robledo</div>
                     <div className={classes.topBoxIconsRight}>
                         <div className={classes.topBoxIconsRightGrid}>
-                            <button onClick={props.setLight}>night</button>
+                            {/* <button onClick={props.setLight}>night</button> */}
+                            <DarkLightMode
+                                light={props.light}
+                                onClick={props.setLight}
+                            />
+                            <DarkLightMode
+                                light={props.light}
+                                onClick={props.setLight}
+                            />
+                            <DarkLightMode
+                                light={props.light}
+                                onClick={props.setLight}
+                            />
                         </div>
                     </div>
                 </div>
                 <div className={classes.bottomBox}>
-                    <div className={classes.bottomBoxLeftMenu}></div>
+                    <div className={classes.bottomBoxLeftMenu}>
+                        <div className={classes.menuTitle}> Menu </div>
+                        {menuItems.map((item) => (
+                            <MenuItem
+                                viewBox={item.viewBox}
+                                icon={item.icon}
+                                description={item.id}
+                            />
+                        ))}
+                    </div>
                     <div className={classes.bottomBoxRightContent}></div>
                 </div>
             </div>
