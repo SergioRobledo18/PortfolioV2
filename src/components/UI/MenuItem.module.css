@@ -8,32 +8,30 @@
 }
 
 .menuItemContainerIcon {
-    width: 20%;
+    width: 25%;
     padding-left: 0px;
     display: flex;
     align-items: center;
 }
 
 .iconBackground {
-    height: 80%;
-    width: 90%;
+    height: 70%;
+    width: 70%;
     border-radius: 10px;
-    /* background-color: white; */
+    background-color: #808191;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .menuIcon {
-    width: 100%;
-    height: 75%;
-    margin: 0px;
-    padding: 0px;
+    width: 50%;
     fill: var(--secondaryColor);
 }
 
 .menuItemContainerDescription {
-    width: 80%;
-    padding-left: 15px;
+    width: 75%;
+    padding-left: 5px;
     font-size: 16px;
     font-weight: 500;
     display: flex;
@@ -47,4 +45,8 @@
 
 .menuItemContainer:hover .menuItemContainerDescription {
     color: white;
+}
+
+.menuItemContainer:hover .iconBackground {
+    background-color: var(--backgroundColor);
 }

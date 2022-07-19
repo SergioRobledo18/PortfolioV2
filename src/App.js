@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import classes from "./App.module.css";
 import classnames from "classnames";
-import Background from "./components/layout/Background";
-import Dashboard from "./components/layout/Dashboard";
+import Background from "./components/UI/Background";
+import Dashboard from "./components/UI/Dashboard";
 
 function App() {
     const [light, setLight] = useState(false);

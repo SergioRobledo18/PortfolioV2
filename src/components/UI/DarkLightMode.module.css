@@ -1,11 +1,16 @@
 .formButton {
+    width: 30px;
+    height: 30px;
     border: none;
     background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .SunIcon {
-    width: 30px;
-    height: 30px;
+    max-width: 30px;
+    max-height: 30px;
     fill: var(--darkModeColor);
 }
 
@@ -25,15 +30,46 @@
 .MoonIcon {
     width: 30px;
     height: 30px;
+}
+
+.MoonIcon:hover {
     fill: #f6f1d5;
 }
 
-/* .MoonIcon:hover .NightSky {
-    fill: #344e5d !important;
-} */
+.MoonIcon:hover .star1 {
+    fill: yellow;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    animation: starMovement 2s linear infinite;
+}
 
-/* .MoonIcon:hover .MoonShadow {
-    fill: #717171;
-} */
+.MoonIcon:hover .star2 {
+    fill: yellow;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    animation: starMovement 2s 1s linear infinite;
+}
 
-/* #717171 */
+@keyframes starMovement {
+    0%,
+    50%,
+    100% {
+        transform: translateX(0px);
+    }
+
+    15%,
+    45% {
+        transform: translateX(5px);
+    }
+    30% {
+        transform: translateX(8px);
+    }
+
+    65%,
+    95% {
+        transform: translateX(-5px);
+    }
+    80% {
+        transform: translateX(-8px);
+    }
+}

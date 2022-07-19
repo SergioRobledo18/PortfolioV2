@@ -1,0 +1,11 @@
+.sectionMainContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.sectionMainContainer h1 {
+    margin: 0px;
+}

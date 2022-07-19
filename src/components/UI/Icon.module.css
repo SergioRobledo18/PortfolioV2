@@ -1,0 +1,16 @@
+.iconHolder {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--backgroundColor);
+}
+
+.menuIcon {
+    width: 30px;
+    height: 30px;
+    fill: white;
+}
+
+.iconHolder:hover {
+    cursor: pointer;
+}
