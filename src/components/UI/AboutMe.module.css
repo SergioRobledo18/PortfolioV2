@@ -2,3 +2,317 @@
     padding-top: 0px;
     padding-left: 10px;
 }
+
+.aboutMeContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    margin-top: 25px;
+}
+
+/* animating the head and hair  */
+#a657ec4b47ce4d2a9c5881a811696ca9 {
+    transform-origin: 50% 100%;
+    transform-box: fill-box;
+    animation: beat 1.5s linear infinite alternate-reverse;
+    animation-fill-mode: both;
+}
+
+#path203 {
+    transform-origin: 50% 100%;
+    transform-box: fill-box;
+    animation: beat 1.5s linear infinite alternate-reverse;
+    animation-fill-mode: both;
+}
+
+@keyframes beat {
+    0% {
+        transform: rotate(-10deg);
+    }
+    10% {
+        transform: rotate(-8deg);
+    }
+    20% {
+        transform: rotate(-6deg);
+    }
+    30% {
+        transform: rotate(-4deg);
+    }
+    40% {
+        transform: rotate(-2deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    60% {
+        transform: rotate(2deg);
+    }
+    70% {
+        transform: rotate(4deg);
+    }
+    80% {
+        transform: rotate(6deg);
+    }
+    90% {
+        transform: rotate(9deg);
+    }
+    100% {
+        transform: rotate(10deg);
+    }
+}
+
+/* animating the laptop screen */
+#rect82,
+#rect84,
+#rect86,
+#rect88,
+#rect90 {
+    transform-origin: 100% 100%;
+    transform-box: fill-box;
+    animation: movingCode 4s 0.1s ease-in infinite;
+    animation-fill-mode: backwards;
+}
+
+#rect92,
+#rect94,
+#rect96,
+#rect98,
+#rect100 {
+    transform-origin: 100% 100%;
+    transform-box: fill-box;
+    animation: movingCode 4s 0.2s ease-in infinite;
+    animation-fill-mode: backwards;
+}
+#rect102,
+#rect104,
+#rect106,
+#rect108,
+#rect110 {
+    transform-origin: 100% 100%;
+    transform-box: fill-box;
+    animation: movingCode 4s 0.3s ease-in infinite;
+    animation-fill-mode: backwards;
+}
+
+#rect112,
+#rect118,
+#rect114,
+#rect116 {
+    transform-origin: 100% 100%;
+    transform-box: fill-box;
+    animation: movingCode 4s 0.4s ease-in infinite;
+    animation-fill-mode: backwards;
+}
+
+#rect146,
+#rect152,
+#rect148,
+#rect150 {
+    transform-origin: 100% 100%;
+    transform-box: fill-box;
+    animation: movingCode 4s 0.5s ease-in infinite;
+    animation-fill-mode: backwards;
+}
+
+#rect138,
+#rect144,
+#rect140,
+#rect142 {
+    transform-origin: 100% 100%;
+    transform-box: fill-box;
+    animation: movingCode 4s 0.6s ease-in infinite;
+    animation-fill-mode: backwards;
+}
+
+#rect130,
+#rect136,
+#rect132,
+#rect134 {
+    transform-origin: 100% 100%;
+    transform-box: fill-box;
+    animation: movingCode 4s 0.7s ease-in infinite;
+    animation-fill-mode: backwards;
+}
+
+#rect126,
+#rect128,
+#rect120,
+#rect122,
+#rect124 {
+    transform-origin: 100% 100%;
+    transform-box: fill-box;
+    animation: movingCode 4s 0.8s ease-in infinite;
+    animation-fill-mode: backwards;
+}
+
+@keyframes movingCode {
+    0% {
+        transform: translateY(45px);
+        fill: none;
+    }
+    10% {
+        transform: translateY(40px);
+        fill: none;
+    }
+    20% {
+        transform: translateY(35px);
+        fill: none;
+    }
+    30% {
+        transform: translateY(30px);
+        fill: none;
+    }
+    40% {
+        transform: translateY(25px);
+        fill: none;
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    60% {
+        transform: translateY(15px);
+    }
+    70% {
+        transform: translateY(10px);
+    }
+    80% {
+        transform: translateY(5px);
+    }
+    90% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
+/* animating the sun and moon*/
+
+#circle2 {
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    animation: rotatingSun 20s linear infinite backwards;
+    fill: #fce570;
+}
+#circle3 {
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    animation: rotatingMoon 20s linear infinite backwards;
+    fill: #f6f1d5;
+}
+
+/* animating the room colors */
+#path6 {
+    animation: backgroundColor 20s linear infinite both;
+}
+
+#path8 {
+    animation: backgroundDesk 20s linear infinite both;
+}
+
+#path205 {
+    animation: backgroundChair 20s linear infinite both;
+}
+
+@keyframes backgroundColor {
+    0%,
+    100% {
+        fill: #f9feff;
+    }
+    85% {
+        fill: #3f3d56;
+    }
+}
+
+@keyframes backgroundDesk {
+    0%,
+    100% {
+        fill: #ba8c63;
+    }
+    85% {
+        fill: #3f3d56;
+    }
+}
+@keyframes backgroundChair {
+    0%,
+    100% {
+        fill: #0f4d92;
+    }
+    85% {
+        fill: #3f3d56;
+    }
+}
+
+/* animation lasts 20s but half are used for delay. This applies to both animations */
+@keyframes rotatingSun {
+    0% {
+        transform: translate(-240px);
+    }
+    10% {
+        transform: translate(-172px);
+    }
+    20% {
+        transform: translate(-104px);
+    }
+    30% {
+        transform: translate(-36px);
+    }
+    40% {
+        transform: translate(32px);
+    }
+    50% {
+        transform: translate(100px);
+    }
+    60% {
+        transform: translate(100px);
+    }
+    70% {
+        transform: translate(100px);
+    }
+    80% {
+        transform: translate(100px);
+    }
+    90% {
+        transform: translate(100px);
+    }
+    100% {
+        transform: translate(100px);
+    }
+}
+
+@keyframes rotatingMoon {
+    0% {
+        transform: translate(-240px);
+    }
+    10% {
+        transform: translate(-240px);
+    }
+    20% {
+        transform: translate(-240px);
+    }
+    30% {
+        transform: translate(-240px);
+    }
+    40% {
+        transform: translate(-240px);
+    }
+    50% {
+        transform: translate(-240px);
+    }
+    60% {
+        transform: translate(-172px);
+    }
+    70% {
+        transform: translate(-104px);
+    }
+    80% {
+        transform: translate(-36px);
+    }
+    90% {
+        transform: translate(32px);
+    }
+    100% {
+        transform: translate(100px);
+    }
+}

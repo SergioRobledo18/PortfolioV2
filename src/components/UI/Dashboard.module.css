@@ -58,7 +58,7 @@
 .topBoxIconsRightGrid {
     display: grid;
     grid-template-columns: 30px 30px 30px;
-    column-gap: 10px;
+    column-gap: 3px;
 }
 
 .bottomBox {

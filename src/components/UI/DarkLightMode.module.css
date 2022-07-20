@@ -9,8 +9,8 @@
 }
 
 .SunIcon {
-    max-width: 30px;
-    max-height: 30px;
+    max-width: 25px;
+    max-height: 25px;
     fill: var(--darkModeColor);
 }
 
@@ -28,12 +28,13 @@
 }
 
 .MoonIcon {
-    width: 30px;
-    height: 30px;
+    max-width: 25px;
+    max-height: 25px;
 }
 
 .MoonIcon:hover {
     fill: #f6f1d5;
+    cursor: pointer;
 }
 
 .MoonIcon:hover .star1 {

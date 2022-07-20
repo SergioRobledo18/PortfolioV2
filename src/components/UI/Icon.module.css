@@ -2,15 +2,23 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: var(--backgroundColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
 }
 
 .menuIcon {
-    width: 30px;
-    height: 30px;
-    fill: white;
+    width: 25px;
+    height: 25px;
+    fill: var(--secondaryColor);
 }
 
 .iconHolder:hover {
     cursor: pointer;
+    background-color: var(--backgroundColor);
+}
+
+.iconHolder:hover .menuIcon {
+    fill: var(--iconColor);
 }

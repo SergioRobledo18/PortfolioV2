@@ -8,11 +8,15 @@ const Icon = (props) => {
             style={{
                 "--backgroundColor": props.iconBackground,
             }}
-            href="https://google.com"
+            href={props.link}
             target="_blank"
             rel="noopener noreferrer"
         >
-            <svg className={classes.menuIcon} viewBox={props.viewBox}>
+            <svg
+                className={classes.menuIcon}
+                viewBox={props.viewBox}
+                style={{ "--iconColor": props.iconColor }}
+            >
                 {props.icon}
             </svg>
         </a>
